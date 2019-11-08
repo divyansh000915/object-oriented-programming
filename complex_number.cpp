@@ -23,22 +23,22 @@ class complex
 			cout<<real<<" + j"<<img<<endl;
 		}
 
-		add_real(int r)
+		void add_real(int r)
 		{
 			real=real+r;
 		}
 
-		sub_real(int r)
+		void sub_real(int r)
 		{
 			real=real-r;
 		}
 
-		add_img(int r)
+		void add_img(int r)
 		{
 			img=img+r;
 		}
 
-		sub_img(int r)
+		void sub_img(int r)
 		{
 			img=img-r;
 		}
@@ -67,13 +67,13 @@ int main()
 						int t;
 						cout<<"Enter the number :: ";
 						cin t;
-						add_real(t);
+						c.add_real(t);
 						break;
 					case 2:
 						int t;
 						cout<<"Enter the number :: ";
 						cin t;
-						sub_real(t);
+						c.sub_real(t);
 						break;
 				}
 				break;
@@ -88,19 +88,19 @@ int main()
 						int t;
 						cout<<"Enter the number :: ";
 						cin t;
-						add_img(t);
+						c.add_img(t);
 						break;
 					case 2:
 						int t;
 						cout<<"Enter the number :: ";
 						cin t;
-						sub_img(t);
+						c.sub_img(t);
 						break;
 				}
 				break;
 
 			case 3:
-				display();
+				c.display();
 				break;
 			case 4:
 				break;
